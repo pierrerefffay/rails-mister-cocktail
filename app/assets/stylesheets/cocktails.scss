@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-  background-image: asset_url('background4.jpg');
+  background-image: asset_url('background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   // background-position: center;
@@ -27,16 +27,27 @@ body {
 }
 
 .card {
-  height: 300px;
+  height: 200px;
+  border: transparent;
   background-color: transparent;
   padding: 20px;
   color: white;
-  box-shadow: 0px 1px 15px 1px black;
+  image_tag {
+    height: 200px;
+    border-radius: 5px;
+  }
+}
+
+li {
+  font-weight: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 #creation {
   width: 300px;
-  margin: 30px auto;
+  margin: 100px auto;
 }
  .form-actions {
  }
@@ -44,4 +55,16 @@ body {
 .center {
   margin: 0 auto;
 
+}
+
+#form-inputs {
+  color: white;
+  font-weight: 35px;
+  font-weight: bolder;
+}
+
+#delete {
+  background-color: red;
+  border-radius: 5px;
+  color: white;
 }
